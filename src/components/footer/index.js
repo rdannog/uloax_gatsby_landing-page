@@ -1,5 +1,7 @@
 import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style.js'
+
 export function Footer() {
     const data = useStaticQuery(graphql`
         query {
@@ -44,8 +46,8 @@ export function Footer() {
         }
     `)
     return (
-        <div>
+        <S.FooterContainer>
             <p>oi</p>
-        </div>
+        </S.FooterContainer>
     )
 }
