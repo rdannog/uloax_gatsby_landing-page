@@ -33,17 +33,20 @@ export function Header() {
         }
     `)
 
+    const {bookingbtn, contactbtn, logo, taxibtn, homebtn, bookText, bookTitle, phoneNumber, searchBtn, formTitle, taxi1, taxi2} = data.alldata.headers[0]
+
     return (
         <S.HeaderContainer>
             <S.Nav>
-                <S.NavLogo/>
+                <S.NavLogo src={logo} alt="logo"/>
                     <S.List>
-                        <S.Items>Home</S.Items>
-                        <S.Items>Taxi</S.Items>
-                        <S.Items>Booking</S.Items>
-                        <S.Items>Contact Us</S.Items>
+                        <S.Items>{homebtn}</S.Items>
+                        <S.Items>{taxibtn}</S.Items>
+                        <S.Items>{bookingbtn}</S.Items>
+                        <S.Items>{contactbtn}</S.Items>
                     </S.List>
             </S.Nav>
+            
         </S.HeaderContainer>
     )
 }
