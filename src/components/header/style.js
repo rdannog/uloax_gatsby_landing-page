@@ -22,3 +22,6 @@ export const List = styled.div`
 export const Items = styled.div`
     font-size: 1.5rem;  
 `
+export const HeaderSlides = styled.section`
+      
+`
