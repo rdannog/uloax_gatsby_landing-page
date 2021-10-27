@@ -45,9 +45,22 @@ export function Footer() {
             }
         }
     `)
+
+    const {about, address, addressText, booking, contact, copyright, facebook, facebokIcon, instagram, instagramIcon, linkedin, linkedinIcon, listStyle, listTitle1, listTitle2, newsTtitle, subscribrBtn, taxi, twitter, twitterIcon, youtube, youtubeIcon } = data.alldata.footers[0]
+
     return (
         <S.FooterContainer>
-            <p>oi</p>
+            <S.Adress>
+              <p>{address}</p>
+              <p>{addressText}</p>
+            </S.Adress>
+            <S.Links>
+              <p>{listTitle1}</p>
+              <li><img src={listStyle.url}/> <a>{about}</a></li>
+              <li></li>
+            </S.Links>
+            <S.Follow></S.Follow>
+            <S.News></S.News>
         </S.FooterContainer>
     )
 }
