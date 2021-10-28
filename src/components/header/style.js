@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     display: flex;
     background-color: #1a1a1a;
+    
 `
 
 export const Nav = styled.div`
