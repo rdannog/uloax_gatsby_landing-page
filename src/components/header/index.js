@@ -49,6 +49,29 @@ export function Header() {
         </S.Nav>
         <S.HeaderSlides>
           <S.Slide>
+              <S.BookContact>
+                <S.ContactContainer>
+                  <S.BookTitle>
+                    {bookTitle}
+                  </S.BookTitle>
+                  <S.Phone>
+                    {phoneNumber}
+                  </S.Phone>
+                </S.ContactContainer>
+                <S.TaxiImg src={taxi2.url} alt="taxi1"/>
+              </S.BookContact>
+              <S.BookingForm>
+                <S.FormTitle>{bookText}</S.FormTitle>
+                <S.Form>
+                  <S.FormText>{formTitle}</S.FormText>
+                  <S.FormInput placeholder="PICKUP"/>
+                  <S.FormInput placeholder="DROP"/>
+                  <S.FormInput placeholder="WHEN"/>
+                  <S.SearchBtn>{searchBtn}</S.SearchBtn>
+                </S.Form>
+              </S.BookingForm>
+          </S.Slide>
+          <S.Slide>
             <S.BookContact>
               <S.ContactContainer>
                 <S.BookTitle>
@@ -58,9 +81,7 @@ export function Header() {
                   {phoneNumber}
                 </S.Phone>
               </S.ContactContainer>
-              <S.Taxi>
-                <S.TaxiImg src={taxi2.url} alt="taxi1"/>
-              </S.Taxi>
+              <S.TaxiImg src={taxi1.url} alt="taxi1"/>
             </S.BookContact>
             <S.BookingForm>
               <S.FormTitle>{bookText}</S.FormTitle>
@@ -69,12 +90,33 @@ export function Header() {
                 <S.FormInput placeholder="PICKUP"/>
                 <S.FormInput placeholder="DROP"/>
                 <S.FormInput placeholder="WHEN"/>
-                <div>
-                  <S.FormButton>{searchBtn}</S.FormButton>
-                </div>
+                <S.SearchBtn>{searchBtn}</S.SearchBtn>
               </S.Form>
             </S.BookingForm>
           </S.Slide>
+          <S.Slide>
+            <S.BookContact>
+              <S.ContactContainer>
+                <S.BookTitle>
+                  {bookTitle}
+                </S.BookTitle>
+                <S.Phone>
+                  {phoneNumber}
+                </S.Phone>
+              </S.ContactContainer>
+              <S.TaxiImg src={taxi2.url} alt="taxi1"/>
+            </S.BookContact>
+            <S.BookingForm>
+              <S.FormTitle>{bookText}</S.FormTitle>
+              <S.Form>
+                <S.FormText>{formTitle}</S.FormText>
+                <S.FormInput placeholder="PICKUP"/>
+                <S.FormInput placeholder="DROP"/>
+                <S.FormInput placeholder="WHEN"/>
+                <S.SearchBtn>{searchBtn}</S.SearchBtn>
+              </S.Form>
+            </S.BookingForm>
+          </S.Slide>              
         </S.HeaderSlides>
       </S.HeaderContainer>
     )

@@ -1,35 +1,49 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-    
+    display: flex;
+    background-color: #1a1a1a;
 `
 export const Nav = styled.div`
     height:15vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    width: 100vw;
+    padding: 1%;
+    height: auto;
+    position: fixed;
+    z-index: 99999;
+    background-color: #1a1a1a;
 `
 export const NavLogo = styled.img`
     width: 15vw;
 `
-export const NavList = styled.div`
+export const List = styled.div`
+    width:50vw;
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
 `
-export const List = styled.div`
-   display:flex;
-`
-export const Items = styled.div`
-    font-size: 1.5rem; 
-    color: #fff; 
+
+export const Items = styled.a`
+    cursor: pointer;
+    font-size: 1.3vw;
+    color: #fff;
+    border:0;
+    text-decoration: none;
+    &:hover {
+        color: #f8ca11;
+        transition: all 0.3s ease 0s;
+        animation: 5s ease 0s 1 normal none running fdBcwW;
+    } 
 `
 export const HeaderSlides = styled.section`
     width:100%;
+    padding-top: 15vh;
 `
 export const Slide = styled.section`
     width:100%;
-    height:100%;
+    height:85vh;
     display:flex;
 `
 export const BookContact = styled.div`
@@ -37,12 +51,11 @@ export const BookContact = styled.div`
     height:100%;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:start;
     align-items:end;
 `
 export const ContactContainer = styled.div`
-    width: 35vw;
-    height: 22vh;
+    width: 65%;
     background-color: #f8ca11;
     text-align: center;
     font-size: 2vw;
@@ -59,10 +72,9 @@ export const BookTitle = styled.h2`
 export const Phone = styled.h2`
     font-weight:400;
 `
-export const Taxi = styled.div`
-`
+
 export const TaxiImg = styled.img`
-    margin-top:4vh;    
+    margin-top:10vh;
     width:40vw;
 `
 export const BookingForm = styled.section`
@@ -83,21 +95,24 @@ export const FormTitle = styled.h2`
 `
 export const Form = styled.form`
     width:90%;
-    height:55%;
+    height:60%;
     font-weight:400;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:space-around;
+    justify-content:space-between;
     background-color: #fff;
 `
 export const FormText = styled.h2`
     font-weight:400;
+    font-size:2vw;
     padding:1vh 1vw;
+    margin:1vh 0;
 `
 export const FormInput = styled.input`
     width:90%;
     height:7vh;
+    margin:1vh 0;
     background-color: #e1e1e1;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
@@ -108,8 +123,23 @@ export const FormInput = styled.input`
         padding-left:1vw;
     }
 `
-export const FormButton = styled.button`
+
+export const SearchBtn = styled.button`
+    width:10vw;
+    height:9vh;
+    font-size:1.2vw;
     font-weight:400;
     align-self:end;
-    margin-right:2.5vw;
+    margin:0 2.5vw 4vh 0;
+    border: 1px solid #353433;
+    border-radius: 10px;
+    background-color: #353433;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: #f8ca11;
+        color: #353433;
+        border: 1px solid #f8ca11;
+    }
+
 `
