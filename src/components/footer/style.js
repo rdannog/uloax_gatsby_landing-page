@@ -8,9 +8,10 @@ export const FooterContainer = styled.div`
     width: 100%;
     height: 50vh;
     background-color: #1a1a1a;
-@media (max-width: 992px) {
-    height: 70vh;
-}`
+    @media (max-width: 992px) {
+        height: 70vh;
+    }
+`
 
 
 export const FooterContent = styled.div`
@@ -20,6 +21,7 @@ export const FooterContent = styled.div`
     width: 70%;
     @media (max-width: 992px) {
         flex-wrap: wrap;
+        
         ;
     }
 `
@@ -29,6 +31,7 @@ export const Title = styled.div`
     margin-bottom: 1em;
     color: #fff;
     font-weight: bold;
+    
 `
 
 export const Adress = styled.div`
@@ -40,9 +43,15 @@ export const Adress = styled.div`
     color: #fff;
     margin-top: 0.4em;
     margin-right: 1.5em;
+    @media (max-width: 992px) {
+        max-width: 50%;
+    }
 `
 export const Paragraph = styled.div`
     width: 200px;
+    @media (max-width: 992px) {
+        width: 250px;
+    }
 `
 
 export const Links = styled.div`
@@ -52,6 +61,9 @@ export const Links = styled.div`
     font-size: 1em;
     list-style: none;
     background-color: #1a1a1a;
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
 `
 
 export const Follow = styled.div`
@@ -60,6 +72,9 @@ export const Follow = styled.div`
     list-style: none;
     background-color: #1a1a1a;
     width: 25%;
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
 `
 
 export const News = styled.div`
@@ -67,6 +82,9 @@ export const News = styled.div`
     flex-direction: column;
     background-color: #1a1a1a;
     width: 25%;
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
 `
 
 export const Item = styled.li`
