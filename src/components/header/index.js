@@ -38,12 +38,13 @@ export function Header() {
     return (
         <S.HeaderContainer>
             <S.Nav>
-                <S.NavLogo src={logo} alt="logo"/>
+                <S.NavLogo src={logo.url} alt="logo"/>
                     <S.List>
-                        <S.Items>{homebtn}</S.Items>
-                        <S.Items>{taxibtn}</S.Items>
-                        <S.Items>{bookingbtn}</S.Items>
-                        <S.Items>{contactbtn}</S.Items>
+                        <S.Items href="#" id="slide" >{homebtn}</S.Items>
+                        <S.Items href="#" id="taxi" >{taxibtn}</S.Items>
+                        <S.Items href="#" id="ride" >{bookingbtn}</S.Items>
+                        <S.Items href="#" id="footer" >{contactbtn}</S.Items>
+                        
                     </S.List>
             </S.Nav>
             <S.HeaderSlides>
