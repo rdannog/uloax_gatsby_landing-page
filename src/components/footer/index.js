@@ -51,6 +51,7 @@ export function Footer() {
     return (
       <>
         <S.FooterContainer>
+          <S.FooterContent>
             <S.Adress>
               <S.Title>{address}</S.Title>
               <S.Paragraph>{addressText}</S.Paragraph>
@@ -76,6 +77,7 @@ export function Footer() {
               <S.input placeholder="Enter Your Email"></S.input>
               <S.Button>{subscribeBtn}</S.Button>
             </S.News>
+          </S.FooterContent>
         </S.FooterContainer>
             <S.CopyrightBox>
               <S.Copyright>{copyright}</S.Copyright>
