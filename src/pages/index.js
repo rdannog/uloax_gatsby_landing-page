@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
   cursor:default;
   font-family: 'Roboto', sans-serif;
 }
+body{
+  background-color:#1a1a1a;
+}
 `
 
 export default function Index() {
