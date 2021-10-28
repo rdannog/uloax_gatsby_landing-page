@@ -44,7 +44,6 @@ export function Header() {
                         <S.Items href="#" id="taxi" >{taxibtn}</S.Items>
                         <S.Items href="#" id="ride" >{bookingbtn}</S.Items>
                         <S.Items href="#" id="footer" >{contactbtn}</S.Items>
-                        
                     </S.List>
             </S.Nav>
             

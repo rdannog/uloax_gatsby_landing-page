@@ -3,13 +3,27 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 50vh;
     background-color: #1a1a1a;
-    padding:0em 10em 0em 10em;
+@media (max-width: 992px) {
+    height: 70vh;
+}`
+
+
+export const FooterContent = styled.div`
+    display: flex;
+    justify-content: space evenly;
+    align-items: center;
+    width: 70%;
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+        ;
+    }
 `
+
 export const Title = styled.div`
     font-size: 2em;
     margin-bottom: 1em;
@@ -25,9 +39,10 @@ export const Adress = styled.div`
     font-size: 1em;
     color: #fff;
     margin-top: 0.4em;
+    margin-right: 1.5em;
 `
 export const Paragraph = styled.div`
-    width: 75%;
+    width: 200px;
 `
 
 export const Links = styled.div`
@@ -44,13 +59,14 @@ export const Follow = styled.div`
     flex-direction: column;
     list-style: none;
     background-color: #1a1a1a;
-    width: 20%;
+    width: 25%;
 `
 
 export const News = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a;
+    width: 25%;
 `
 
 export const Item = styled.li`
@@ -89,7 +105,7 @@ export const icon = styled.img`
 `
 
 export const input = styled.input`
-    width: 140%;
+    width: 120%;
     height: 3.5em;
     border-radius: 0.5em;
     padding: 0.5em;
@@ -99,7 +115,7 @@ export const input = styled.input`
 `
 
 export const Button = styled.div`
-    width: 80%;
+    width: 153px;
     border: 0;
     color: #fff;
     background-color: #FECF3D;
