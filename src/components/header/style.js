@@ -17,12 +17,13 @@ export const Nav = styled.div`
     background-color: #1a1a1a;
     @media (max-width: 992px) {
         justify-content: flex-start;
+        padding: 2%;
     }
 `
 export const NavLogo = styled.img`
     width: 15vw;
     @media (max-width: 992px) {
-        width: 170px;
+        width: 200px;
         margin-left: 30px;
     }
 `

@@ -15,7 +15,8 @@ export const FooterContainer = styled.div`
         height: auto;
         justify-content: flex-start;
         padding-left: 15px;
-        padding-top: 5em;
+        padding-top: 6em;
+       
     }
 
 
@@ -31,12 +32,13 @@ export const FooterContent = styled.div`
     }
     @media (max-width: 592px) {
         flex-direction: column;
+        
     }
     
 `
 
 export const Title = styled.div`
-    font-size: 2em;
+    font-size: 1.6em;
     margin-bottom: 1em;
     color: #fff;
     font-weight: bold;
@@ -46,7 +48,7 @@ export const Title = styled.div`
 export const Adress = styled.div`
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 27%;
     background-color: #292828;
     font-size: 1em;
     color: #fff;
@@ -59,15 +61,22 @@ export const Adress = styled.div`
     }
     @media (max-width: 592px) {
         margin-bottom: 2em;
+        
     }
 `
 export const Paragraph = styled.div`
     width: 200px;
+    font-weight: lighter;
     @media (max-width: 992px) {
         width: 270px;
     }
     @media (max-width: 768px) {
         width: 200px;
+    }
+    @media (max-width: 592px) {
+        width: 290px;
+        letter-spacing: 0.5px;
+        
     }
 `
 
