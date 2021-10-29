@@ -3,31 +3,81 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 50vh;
-    background-color: #1a1a1a;
-    padding:0em 10em 0em 10em;
+    background-color: #292828;
+    @media (max-width: 992px) {
+        height: 80vh;
+    }
+    @media (max-width: 592px) {
+        height: auto;
+        justify-content: flex-start;
+        padding-left: 15px;
+        padding-top: 6em;
+       
+    }
+
+
 `
+
+export const FooterContent = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 70%;
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+    }
+    @media (max-width: 592px) {
+        flex-direction: column;
+        
+    }
+    
+`
+
 export const Title = styled.div`
-    font-size: 2em;
+    font-size: 1.6em;
     margin-bottom: 1em;
     color: #fff;
     font-weight: bold;
+    width: 170px;
 `
 
 export const Adress = styled.div`
     display: flex;
     flex-direction: column;
-    width: 25%;
-    background-color: #1a1a1a;
+    width: 27%;
+    background-color: #292828;
     font-size: 1em;
     color: #fff;
-    margin-top: 0.4em;
+    margin-right: 1.5em;
+    @media (max-width: 992px) {
+        padding: 0em 0em 0em 0em;
+        margin-right: 0em;
+        width: 50%;
+        margin-bottom: 4em;
+    }
+    @media (max-width: 592px) {
+        margin-bottom: 2em;
+        
+    }
 `
 export const Paragraph = styled.div`
-    width: 75%;
+    width: 200px;
+    font-weight: lighter;
+    @media (max-width: 992px) {
+        width: 270px;
+    }
+    @media (max-width: 768px) {
+        width: 200px;
+    }
+    @media (max-width: 592px) {
+        width: 290px;
+        letter-spacing: 0.5px;
+        
+    }
 `
 
 export const Links = styled.div`
@@ -36,21 +86,40 @@ export const Links = styled.div`
     width: 25%;
     font-size: 1em;
     list-style: none;
-    background-color: #1a1a1a;
+    background-color: #292828;
+    @media (max-width: 992px) {
+        padding: 0em 0em 0em 0em;
+        width: 50%;
+    }
+    @media (max-width: 592px) {
+        margin-bottom: 2em;
+    }
 `
 
 export const Follow = styled.div`
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #1a1a1a;
-    width: 20%;
+    background-color: #292828;
+    width: 25%;
+    @media (max-width: 992px) {
+        padding: 0em 0em 0em 0em;
+        width: 50%;
+    }
+    @media (max-width: 592px) {
+        margin-bottom: 2em;
+    }
 `
 
 export const News = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1a;
+    background-color: #292828;
+    width: 25%;
+    @media (max-width: 992px) {
+        width: 50%;
+        padding: 0em 0em 0em 0em;
+    }
 `
 
 export const Item = styled.li`
@@ -89,17 +158,23 @@ export const icon = styled.img`
 `
 
 export const input = styled.input`
-    width: 140%;
+    width: 120%;
     height: 3.5em;
     border-radius: 0.5em;
     padding: 0.5em;
     margin-top: 0.4em;
     outline: none;
     border: none;
+    @media (max-width: 992px) {
+        width: 100%; 
+    }
+    @media (max-width: 592px) {
+        width: 250%;
+    }
 `
 
 export const Button = styled.div`
-    width: 80%;
+    width: 153px;
     border: 0;
     color: #fff;
     background-color: #FECF3D;
@@ -116,11 +191,16 @@ export const CopyrightBox = styled.div`
     display: flex;
     justify-content: center;
     padding: 1em;
-    
+    background-color: #fff;
 `
 
 export const Copyright = styled.div`
     font-size: 1.2em;
     font-weight: 100;
     opacity: 0.9;
+    @media (max-width: 592px) {
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
 `

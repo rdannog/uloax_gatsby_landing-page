@@ -15,14 +15,25 @@ export const Nav = styled.div`
     position: fixed;
     z-index: 99999;
     background-color: #1a1a1a;
+    @media (max-width: 992px) {
+        justify-content: flex-start;
+        padding: 2%;
+    }
 `
 export const NavLogo = styled.img`
     width: 15vw;
+    @media (max-width: 992px) {
+        width: 200px;
+        margin-left: 30px;
+    }
 `
 export const List = styled.div`
     width:50vw;
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: 992px) {
+        display: none;
+    }
 `
 
 export const Items = styled.a`

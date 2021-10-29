@@ -27,6 +27,7 @@ export default function Index() {
       </Helmet>
       <GlobalStyle/>
       <Header/>
+      <Footer/>
     </div>
   )
 }
