@@ -5,7 +5,7 @@ import * as S from './style.js'
 export function Main() {
     const data = useStaticQuery(graphql`
         query {
-            alldata{
+          completedata{
                 mainIntros {
                     taxiText
                     taxiTitle

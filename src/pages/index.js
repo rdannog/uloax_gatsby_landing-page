@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
   cursor:default;
   font-family: 'Roboto', sans-serif;
 }
+body{
+  background-color:#1a1a1a;
+}
 `
 
 export default function Index() {
@@ -24,8 +27,6 @@ export default function Index() {
       </Helmet>
       <GlobalStyle/>
       <Header/>
-      <Main/>
-      <Footer/>
     </div>
   )
 }

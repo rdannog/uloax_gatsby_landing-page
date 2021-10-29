@@ -5,7 +5,7 @@ import * as S from './style.js'
 export function Footer() {
     const data = useStaticQuery(graphql`
         query {
-            alldata{
+          completedata{
                 footers {
                     about
                     address
@@ -46,7 +46,7 @@ export function Footer() {
         }
     `)
 
-    const {about, address, addressText, booking, contact, copyright, facebook, facebookIcon, instagram, instagramIcon, linkedin, linkedinIcon, listStyle, listTitle1, listTitle2, newsTitle, subscribeBtn, taxi, twitter, twitterIcon, youtube, youtubeIcon } = data.alldata.footers[0]
+    const {about, address, addressText, booking, contact, copyright, facebook, facebookIcon, instagram, instagramIcon, linkedin, linkedinIcon, listStyle, listTitle1, listTitle2, newsTitle, subscribeBtn, taxi, twitter, twitterIcon, youtube, youtubeIcon } = data.completedata.footers[0]
 
     return (
       <>
