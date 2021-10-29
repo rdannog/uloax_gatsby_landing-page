@@ -13,16 +13,13 @@ export const FooterContainer = styled.div`
     }
 `
 
-
 export const FooterContent = styled.div`
     display: flex;
-    justify-content: space evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     width: 70%;
     @media (max-width: 992px) {
         flex-wrap: wrap;
-        
-        ;
     }
 `
 
@@ -31,7 +28,6 @@ export const Title = styled.div`
     margin-bottom: 1em;
     color: #fff;
     font-weight: bold;
-    
 `
 
 export const Adress = styled.div`
@@ -44,7 +40,7 @@ export const Adress = styled.div`
     margin-top: 0.4em;
     margin-right: 1.5em;
     @media (max-width: 992px) {
-        max-width: 50%;
+        padding: 0em 10em 0em 0em;
     }
 `
 export const Paragraph = styled.div`
@@ -62,7 +58,7 @@ export const Links = styled.div`
     list-style: none;
     background-color: #1a1a1a;
     @media (max-width: 992px) {
-        max-width: 100%;
+        padding: 0em 0em 0em 0em;
     }
 `
 
@@ -73,7 +69,7 @@ export const Follow = styled.div`
     background-color: #1a1a1a;
     width: 25%;
     @media (max-width: 992px) {
-        max-width: 100%;
+        padding: 0em 0em 0em 0em;
     }
 `
 
