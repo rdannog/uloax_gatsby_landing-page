@@ -15,6 +15,7 @@ export const FooterContainer = styled.div`
         height: auto;
         justify-content: flex-start;
         padding-left: 15px;
+        padding-top: 5em;
     }
 
 
@@ -56,9 +57,6 @@ export const Adress = styled.div`
         width: 50%;
         margin-bottom: 4em;
     }
-    @max-width: 768px {
-        margin-bottom: -1em;
-    }
     @media (max-width: 592px) {
         margin-bottom: 2em;
     }
@@ -82,7 +80,7 @@ export const Links = styled.div`
     background-color: #292828;
     @media (max-width: 992px) {
         padding: 0em 0em 0em 0em;
-        width: 52%;
+        width: 50%;
     }
     @media (max-width: 592px) {
         margin-bottom: 2em;
@@ -184,7 +182,7 @@ export const CopyrightBox = styled.div`
     display: flex;
     justify-content: center;
     padding: 1em;
-    
+    background-color: #fff;
 `
 
 export const Copyright = styled.div`
