@@ -27,5 +27,8 @@
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
     "styled-components": "^5.3.3"
+  },
+  "exports":{
+    "./package.json": "./package.json"
   }
 }
