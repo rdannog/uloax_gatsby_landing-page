@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     display: flex;
     background-color: #1a1a1a;
+    
 `
 export const Nav = styled.div`
     height:15vh;
@@ -49,15 +50,15 @@ export const Items = styled.a`
     } 
 `
 export const HeaderSlides = styled.section`
-    width:100%;
+    width:98%;
     padding-top: 15vh;
+    
 `
-export const Slide = styled.section`
+export const Slide = styled.div`
     width:100%;
-    height:85vh;
-    display:flex;
+    height:80vh;
 `
-export const BookContact = styled.div`
+export const BookContact = styled.span`
     width:50%;
     height:100%;
     display:flex;
@@ -75,6 +76,7 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 `
 export const BookTitle = styled.h2`
     font-weight:400;
@@ -88,8 +90,11 @@ export const TaxiImg = styled.img`
     margin-top:10vh;
     width:40vw;
 `
-export const BookingForm = styled.section`
+export const BookingForm = styled.span`
     width:50%;
+    position:relative;
+    bottom:100%;
+    left:50%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -117,7 +122,7 @@ export const Form = styled.form`
 export const FormText = styled.h2`
     font-weight:400;
     font-size:2vw;
-    padding:1vh 1vw;
+    padding:2vh 1vw;
     margin:1vh 0;
 `
 export const FormInput = styled.input`
@@ -141,7 +146,7 @@ export const SearchBtn = styled.button`
     font-size:1.2vw;
     font-weight:400;
     align-self:end;
-    margin:0 2.5vw 4vh 0;
+    margin:2vh 2.5vw 4vh 0;
     border: 1px solid #353433;
     border-radius: 10px;
     background-color: #353433;

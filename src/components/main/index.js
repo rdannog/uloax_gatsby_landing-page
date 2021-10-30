@@ -49,6 +49,7 @@ export function Main() {
         <S.MainContainer>
 
           <S.SectionOurTaxi>
+            <a id="taxi"></a>
             <S.BoxTitle>
               <S.Title>{taxiTitle.substring(3, 0)}<span style={{color: "#f8ca11"}}> Taxi</span></S.Title>
             </S.BoxTitle>

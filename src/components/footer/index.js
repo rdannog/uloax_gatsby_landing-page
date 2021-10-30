@@ -51,6 +51,7 @@ export function Footer() {
     return (
       <>
         <S.FooterContainer>
+        <a id="footer"></a>
           <S.FooterContent>
             <S.Adress>
               <S.Title>{address}</S.Title>
