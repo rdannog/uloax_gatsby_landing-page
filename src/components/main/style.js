@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     display: flex;
+    flex-direction: column;
     background-color: #f5f5f5;
     
 `
@@ -51,6 +52,10 @@ export const Car = styled.div`
     align-items: center;
     text-align: center;
     background-color: #fff;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
     @media (max-width: 576px) {
         width: 100%;
         margin-bottom: 4em;
@@ -109,5 +114,23 @@ export const img = styled.img`
     @media (max-width: 576px) {
         width: 380px;
         padding: 1em 3em 0em 3em;
+    }
+`
+export const RideContainer = styled.section`
+    width: 100%;
+`
+export const RideTitle = styled.h2`
+    width:100%;
+    height:35vh;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    h2{
+        width: 40%;
+        color:#2b3436;
+        font-weight: 400;
+        font-size: 2em;
+        border-bottom: 1px solid #2b3436;
     }
 `

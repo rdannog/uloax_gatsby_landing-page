@@ -44,6 +44,8 @@ export function Main() {
     `)
 
     const { taxiText, taxiTitle, taxiImage } = data.completedata.mainIntros[0]
+    const { btn, image1, image2, image3, rideTitle, text, title1, title2 } = data.completedata.mainRides[0]
+
 
     return (
         <S.MainContainer>
@@ -78,7 +80,17 @@ export function Main() {
 
             </S.BoxCarsRow>
           </S.SectionOurTaxi>
-            
+          <S.RideContainer>
+            <a id="ride"></a>
+            <S.RideTitle>
+              <h2>{rideTitle.substring(9, 0)} 
+                <span style={{color: "#f8ca11"}}>
+                   With Uloax
+                </span>
+              </h2>
+              
+            </S.RideTitle>
+          </S.RideContainer>
         </S.MainContainer>
     )
 }
