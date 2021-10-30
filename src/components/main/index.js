@@ -42,9 +42,42 @@ export function Main() {
             }
         }
     `)
+
+    const { taxiText, taxiTitle, taxiImage } = data.completedata.mainIntros[0]
+
     return (
-        <div>
-            <h1>Main</h1>
-        </div>
+        <S.MainContainer>
+
+          <S.SectionOurTaxi>
+            <S.BoxTitle>
+              <S.Title>{taxiTitle}</S.Title>
+            </S.BoxTitle>
+            <S.BoxCarsRow>
+
+              <S.Car>
+                <S.round>01</S.round>
+                <S.CarTitle>CAR 1</S.CarTitle>
+                <S.CarParagraph>{taxiText}</S.CarParagraph>
+                <S.img src={taxiImage.url}alt=""/>
+              </S.Car>
+
+              <S.Car>
+                <S.round>02</S.round>
+                <S.CarTitle>CAR 2</S.CarTitle>
+                <S.CarParagraph>{taxiText}</S.CarParagraph>
+                <S.img src={taxiImage.url}alt=""/>
+              </S.Car>
+
+              <S.Car>
+                <S.round>03</S.round>
+                <S.CarTitle>CAR 3</S.CarTitle>
+                <S.CarParagraph>{taxiText}</S.CarParagraph>
+                <S.img src={taxiImage.url}alt=""/>
+              </S.Car>
+
+            </S.BoxCarsRow>
+          </S.SectionOurTaxi>
+            
+        </S.MainContainer>
     )
 }
