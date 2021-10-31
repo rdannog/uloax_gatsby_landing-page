@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",
+    "extract-files": "^11.0.0",
     "gatsby": "^4.0.2",
     "gatsby-cli": "^4.0.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
@@ -28,8 +29,13 @@
     "react-slick": "^0.28.1",
     "styled-components": "^5.3.3"
   },
-  "exports":{
-    "./package.json": "./package.json",
-    "./public/extractFiles": "./public/extractFiles"
+  "exports": {
+    ".": {
+      "import": "./public/index.mjs",
+      "require": "./public/index.js"
+    },
+    "./public/*": "./public/*",
+    "./package": "./package.json",
+    "./package.json": "./package.json"
   }
 }

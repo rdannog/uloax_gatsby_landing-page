@@ -118,10 +118,13 @@ export const img = styled.img`
 `
 export const RideContainer = styled.section`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 export const RideTitle = styled.h2`
     width:100%;
-    height:35vh;
+    height:50vh;
     text-align:center;
     display: flex;
     justify-content: center;
@@ -133,4 +136,40 @@ export const RideTitle = styled.h2`
         font-size: 2em;
         border-bottom: 1px solid #2b3436;
     }
+`
+export const RideContent = styled.section`
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+`
+export const RideImage = styled.div`
+    width: 30%;
+`
+export const RideText = styled.div`
+    width: 65%; 
+    color: #2b3436;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h3{
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-top: 1em;
+    }
+    button{
+        width:20%;
+        height:20%;
+        font-size: 1.2em;
+        background-color:#f8ca11;
+        border:none;
+        color:#fff;
+        &:hover{
+            cursor: pointer;
+            background-color:#000;
+        }
+    }
+`
+export const BottomContainer = styled.div`
+    width: 100%;
+    height:50vh;
 `
