@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 import * as S from './style'
 
 
@@ -39,13 +39,14 @@ export function Header() {
     const {bookingbtn, contactbtn, logo, taxibtn, homebtn} = data.completedata.headers[0]
     const {bookText, bookTitle, phoneNumber, searchBtn, formTitle, taxi1, taxi2} = data.completedata.headerSlides[0]
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2200,
+      arrows: false,
     };
 
     return (

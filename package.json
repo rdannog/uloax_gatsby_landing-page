@@ -21,15 +21,15 @@
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-styled-components": "^5.0.0",
     "gatsby-source-graphql": "^4.0.0",
-    "node": "^17.0.1",
+    "node": "^16.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
     "styled-components": "^5.3.3"
   },
-  "exports":{
+  "exports": {
     "./package.json": "./package.json",
-    "./public/extractFiles": "./public/extractFiles"
+    "./extractFiles": "./public/extractFiles"
   }
 }
