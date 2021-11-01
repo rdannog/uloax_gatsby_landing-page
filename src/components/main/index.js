@@ -45,6 +45,7 @@ export function Main() {
 
     const { taxiText, taxiTitle, taxiImage } = data.completedata.mainIntros[0]
     const { btn, image1, image2, image3, rideTitle, text, title1, title2 } = data.completedata.mainRides[0]
+    const { phone, background, title11, title22 } = data.completedata.mainBottoms[0]
 
 
     return (
@@ -88,9 +89,51 @@ export function Main() {
                    With Uloax
                 </span>
               </h2>
-              
             </S.RideTitle>
+            <S.RideContent>
+              <S.RideImage>
+                <img src={image1.url} alt=""/>
+              </S.RideImage>
+              <S.RideText>
+                <h3>{title1}</h3>
+                <p>{text}</p>
+                <button>{btn}</button>
+              </S.RideText>
+            </S.RideContent>
+            <S.RideContent>
+              <S.RideText>
+                <h3 style={{textAlign:"right"}}>{title2}</h3>
+                <p style={{textAlign:"right"}}>{text}</p>
+                <button style={{alignSelf:"end"}}>{btn}</button>
+              </S.RideText>
+              <S.RideImage>
+                <img src={image2.url} alt=""/>
+              </S.RideImage>
+            </S.RideContent>
+            <S.RideContent>
+              <S.RideImage>
+                <img src={image3.url} alt=""/>
+              </S.RideImage>
+              <S.RideText>
+                <h3>{title1}</h3>
+                <p>{text}</p>
+                <button>{btn}</button>
+              </S.RideText>
+            </S.RideContent>
+            <S.RideContent>
+              <S.RideText>
+                <h3 style={{textAlign:"right"}}>{title2}</h3>
+                <p style={{textAlign:"right"}}>{text}</p>
+                <button style={{alignSelf:"end"}}>{btn}</button>
+              </S.RideText>
+              <S.RideImage>
+                <img src={image3.url} alt=""/>
+              </S.RideImage>
+            </S.RideContent>
           </S.RideContainer>
+          <S.BottomContainer style={{backgroundImage:`url(${background.url})`}}>
+
+          </S.BottomContainer>
         </S.MainContainer>
     )
 }
