@@ -65,6 +65,7 @@ export const BookContact = styled.span`
     flex-direction:column;
     justify-content:start;
     align-items:end;
+    
 `
 export const ContactContainer = styled.div`
     width: 65%;
@@ -76,7 +77,12 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+    @media (max-width: 768px) {
+        width:85%;
+        align-self:center;
+        padding:7vh 0;
+        font-size: 3vw;
+    }
 `
 export const BookTitle = styled.h2`
     font-weight:400;
@@ -89,6 +95,10 @@ export const Phone = styled.h2`
 export const TaxiImg = styled.img`
     margin-top:10vh;
     width:40vw;
+    @media (max-width: 768px) {
+        width:95%;
+        margin-top:5vh;
+    }
 `
 export const BookingForm = styled.span`
     width:50%;
@@ -108,6 +118,10 @@ export const FormTitle = styled.h2`
     display:flex;
     align-items:center;
     justify-content:center;
+    @media (max-width: 768px) {
+        height:15vh;
+        font-size: 2.2vw;
+    }
 `
 export const Form = styled.form`
     width:90%;

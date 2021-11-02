@@ -144,6 +144,9 @@ export const RideContent = styled.section`
 `
 export const RideImage = styled.div`
     width: 30%;
+    img{
+        width: 100%;
+    }
 `
 export const RideText = styled.div`
     width: 65%; 
@@ -159,10 +162,11 @@ export const RideText = styled.div`
     button{
         width:20%;
         height:20%;
-        font-size: 1.2em;
+        font-size: 1.2vw;
         background-color:#f8ca11;
         border:none;
         color:#fff;
+        padding:1vh 1vw;
         &:hover{
             cursor: pointer;
             background-color:#000;
