@@ -38,10 +38,11 @@
 ## 📌About
 
 <div id="about">
-    <p align="center">
+    <p align="left">
     <em>Construction of a landing page based on a template, using GatsbyJs. Project developed at Vai na Web with the aim of learning.
     </em>
     </p>
+    <a href="https://uloax.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
 </div>
 
 
