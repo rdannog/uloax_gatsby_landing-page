@@ -49,7 +49,7 @@ export function Footer() {
     const {about, address, addressText, booking, contact, copyright, facebook, facebookIcon, instagram, instagramIcon, linkedin, linkedinIcon, listStyle, listTitle1, listTitle2, newsTitle, subscribeBtn, taxi, twitter, twitterIcon, youtube, youtubeIcon } = data.completedata.footers[0]
 
     return (
-      <>
+      <S.Footer>
         <S.FooterContainer>
         <a id="footer"></a>
           <S.FooterContent>
@@ -75,7 +75,9 @@ export function Footer() {
             </S.Follow>
             <S.News>
               <S.Title>{newsTitle}</S.Title>
-              <S.input placeholder="Enter Your Email"></S.input>
+              <label>
+              <S.input placeholder="Enter Your Email"/>
+              </label>
               <S.Button>{subscribeBtn}</S.Button>
             </S.News>
           </S.FooterContent>
@@ -83,6 +85,6 @@ export function Footer() {
             <S.CopyrightBox>
               <S.Copyright>{copyright}</S.Copyright>
             </S.CopyrightBox>
-            </>
+            </S.Footer>
     )
 }

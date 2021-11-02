@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
+export const Footer =styled.footer`
+    width: 100%;
+    padding-top:15vh;
+    background-color: #fff;
+`
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-color: #292828;
+   
     @media (max-width: 992px) {
         height: 80vh;
     }

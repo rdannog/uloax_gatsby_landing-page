@@ -45,14 +45,14 @@ export function Main() {
 
     const { taxiText, taxiTitle, taxiImage } = data.completedata.mainIntros[0]
     const { btn, image1, image2, image3, rideTitle, text, title1, title2 } = data.completedata.mainRides[0]
-    const { phone, background, title11, title22 } = data.completedata.mainBottoms[0]
+    const { phone, background } = data.completedata.mainBottoms[0]
 
 
     return (
         <S.MainContainer>
 
           <S.SectionOurTaxi>
-            <a id="taxi"></a>
+            <a href="#" id="taxi"></a>
             <S.BoxTitle>
               <S.Title>{taxiTitle.substring(3, 0)}<span style={{color: "#f8ca11"}}> Taxi</span></S.Title>
             </S.BoxTitle>
@@ -82,7 +82,7 @@ export function Main() {
             </S.BoxCarsRow>
           </S.SectionOurTaxi>
           <S.RideContainer>
-            <a id="ride"></a>
+            <a href="#" id="ride"></a>
             <S.RideTitle>
               <h2>{rideTitle.substring(9, 0)} 
                 <span style={{color: "#f8ca11"}}>
@@ -131,8 +131,13 @@ export function Main() {
               </S.RideImage>
             </S.RideContent>
           </S.RideContainer>
-          <S.BottomContainer style={{backgroundImage:`url(${background.url})`}}>
-
+          <S.BottomContainer>
+            <S.Background src={background.url} alt=""/>
+            <S.TextContainer>
+              <S.BottomText>{data.completedata.mainBottoms[0].title1}</S.BottomText>
+              <S.BottomText style={{color:"white"}}>{data.completedata.mainBottoms[0].title2}</S.BottomText>
+            </S.TextContainer>
+            <S.Phone src={phone.url} alt=""/>
           </S.BottomContainer>
         </S.MainContainer>
     )

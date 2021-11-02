@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background: linear-gradient(#f5f5f5, #fff);
     
 `
 
@@ -169,7 +169,27 @@ export const RideText = styled.div`
         }
     }
 `
-export const BottomContainer = styled.div`
-    width: 100%;
-    height:50vh;
+export const BottomContainer=styled.section`
+position: relative;
+`
+export const Background =styled.img`
+    width:100%;
+`
+export const BottomText =styled.h2`
+    color: #2b3436;
+    font-size:4vw;
+    font-weight:400;
+    padding-bottom:3vh;
+`
+export const TextContainer =styled.div`
+    width:fit-content;
+    position:absolute;
+    left:40%;
+    bottom:57%;
+`
+export const Phone =styled.img`
+    width:20%;
+    position:absolute;
+    left:77%;
+    top:12%;
 `
