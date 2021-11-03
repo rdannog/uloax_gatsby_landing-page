@@ -35,9 +35,9 @@ export function Slide() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2200,
-        pauseOnHover: true
+        pauseOnHover: true,
     }
-
+   
     return (
        <S.HeaderSlides>
            <Helmet>
@@ -84,9 +84,9 @@ export function Slide() {
               <S.FormTitle>{bookText}</S.FormTitle>
               <S.Form>
                 <S.FormText>{formTitle}</S.FormText>
-                <S.FormInput placeholder="PICKUP"/>
-                <S.FormInput placeholder="DROP"/>
-                <S.FormInput placeholder="WHEN"/>
+                  <S.FormInput placeholder="PICKUP"/>
+                  <S.FormInput placeholder="DROP"/>
+                  <S.FormInput placeholder="WHEN"/>
                 <S.SearchBtn>{searchBtn}</S.SearchBtn>
               </S.Form>
             </S.BookingForm>
@@ -107,9 +107,9 @@ export function Slide() {
               <S.FormTitle>{bookText}</S.FormTitle>
               <S.Form>
                 <S.FormText>{formTitle}</S.FormText>
-                <S.FormInput placeholder="PICKUP"/>
-                <S.FormInput placeholder="DROP"/>
-                <S.FormInput placeholder="WHEN"/>
+                  <S.FormInput placeholder="PICKUP"/>
+                  <S.FormInput placeholder="DROP"/>
+                  <S.FormInput placeholder="WHEN"/>
                 <S.SearchBtn>{searchBtn}</S.SearchBtn>
               </S.Form>
             </S.BookingForm>

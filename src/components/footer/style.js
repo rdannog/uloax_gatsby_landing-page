@@ -125,6 +125,7 @@ export const News = styled.div`
     @media (max-width: 992px) {
         width: 50%;
         padding: 0;
+        display:none;
     }
 `
 

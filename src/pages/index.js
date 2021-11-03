@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   box-sizing:border-box;
   cursor:default;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   background-color:#1a1a1a;
