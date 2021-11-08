@@ -44,7 +44,7 @@
     </p>
     <a href="https://uloax.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
 </div>
-
+<br>
 
 <h2 id="revised-concepts">🗄️ Revised Concepts</h2>
 
@@ -72,21 +72,17 @@
 ```
 git clone https://github.com/rhayssadandara/uloax_gatsby_landing-page.git
 ```
----
+
 ### 2. Install the dependencies
 ```
+cd uloax_gatsby_landing-page
 npm install
-```
-or
-```
-yarn install
 ```
 
 *Make sure your internet is stable, as this may take a while* 
 
 ### 3. Initializing the project
     
-    cd uloax_gatsby_landing-page
     npm run develop
     
  **Open the code and start customizing!**
