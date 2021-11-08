@@ -65,7 +65,14 @@ export const BookContact = styled.span`
     flex-direction:column;
     justify-content:start;
     align-items:end;
-    
+    @media (max-width: 425px) {
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        align-items:center;
+    }
 `
 export const ContactContainer = styled.div`
     width: 65%;
@@ -109,6 +116,9 @@ export const BookingForm = styled.span`
     flex-direction:column;
     align-items:center;
     justify-content:start;
+    @media (max-width: 425px) {
+        display: none;
+    }
 `
 export const FormTitle = styled.h2`
     height:10vh;

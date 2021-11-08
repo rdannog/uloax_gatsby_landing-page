@@ -122,7 +122,7 @@ export const RideContainer = styled.section`
     flex-direction: column;
     align-items: center;
 `
-export const RideTitle = styled.h2`
+export const RideTitle = styled.div`
     width:100%;
     height:50vh;
     text-align:center;
@@ -133,19 +133,34 @@ export const RideTitle = styled.h2`
         width: 40%;
         color:#2b3436;
         font-weight: 400;
-        font-size: 2em;
+        font-size: 3.5vw;
         border-bottom: 1px solid #2b3436;
+        @media (max-width: 425px) {
+            width: 80%;
+            font-size: 15vw;
+        }
+        }
+    @media (max-width: 425px) {
+        height: 30vh;
     }
 `
 export const RideContent = styled.section`
     width: 83%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 425px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 export const RideImage = styled.div`
     width: 30%;
     img{
         width: 100%;
+    }
+    @media (max-width: 425px) {
+        display: none;
     }
 `
 export const RideText = styled.div`
@@ -172,9 +187,32 @@ export const RideText = styled.div`
             background-color:#000;
         }
     }
+    @media (max-width: 425px) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-size: 8vw;
+            font-weight: 400;
+        }
+        button{
+            width:50%;
+            height:50%;
+            font-size: 5vw;
+            margin: 1em 0em;
+        }
+    }
 `
 export const BottomContainer=styled.section`
 position: relative;
+@media (max-width: 425px) {
+    position: relative;
+    bottom: 0;
+    right: 80%;
+    width: 180%;
+    overflow-x: hidden;
+}
 `
 export const Background =styled.img`
     width:100%;
@@ -190,6 +228,13 @@ export const TextContainer =styled.div`
     position:absolute;
     left:40%;
     bottom:57%;
+    @media (max-width: 425px) {
+       left:47%;
+       bottom: 47%;
+       h2{
+        font-size: 6vw;
+       }
+    }
 `
 export const Phone =styled.img`
     width:20%;

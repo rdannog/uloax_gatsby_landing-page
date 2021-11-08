@@ -18,6 +18,13 @@ const GlobalStyle = createGlobalStyle`
 body{
   background-color:#1a1a1a;
 }
+a{
+  text-decoration:none;
+  color:inherit;
+}
+button:hover{
+  transition:0.7s ease-in;
+}
 `
 
 export default function Index() {

@@ -38,7 +38,6 @@ export const FooterContent = styled.div`
     }
     @media (max-width: 592px) {
         flex-direction: column;
-        
     }
     
 `
@@ -49,6 +48,11 @@ export const Title = styled.div`
     color: #fff;
     font-weight: bold;
     width: 24vw;
+    @media (max-width: 425px) {
+        font-size: 8vw;
+        width: 90vw;
+        text-align: center;
+    }
 `
 
 export const Adress = styled.div`
@@ -66,8 +70,13 @@ export const Adress = styled.div`
         margin-bottom: 4vh;
     }
     @media (max-width: 592px) {
-        margin-bottom: 6vh;
-        
+        margin-bottom: 6vh; 
+    }
+    @media (max-width: 425px) {
+        width: 90vw;
+        font-size: 4vw;
+        margin-right:0;
+        text-align: center;
     }
 `
 export const Paragraph = styled.div`
@@ -82,7 +91,9 @@ export const Paragraph = styled.div`
     @media (max-width: 592px) {
         width: 290px;
         letter-spacing: 0.5px;
-        
+    }
+    @media (max-width: 425px) {
+        width: 100%;
     }
 `
 
@@ -99,6 +110,9 @@ export const Links = styled.div`
     }
     @media (max-width: 592px) {
         margin-bottom: 2em;
+    }
+    @media (max-width: 425px) {
+        width: 90vw;
     }
 `
 
@@ -123,8 +137,6 @@ export const News = styled.div`
     background-color: #292828;
     width: 25%;
     @media (max-width: 992px) {
-        width: 50%;
-        padding: 0;
         display:none;
     }
 `
@@ -153,15 +165,23 @@ export const Itemsocial = styled.li`
         transition: all 0.3s ease 0s;
         animation: 5s ease 0s 1 normal none running fdBcwW;
     } 
+    
 `
 
 export const a = styled.a`
     cursor: pointer;
+    @media (max-width: 425px) {
+        font-size: 5vw;
+        margin-left: 5vw;
+    }
 `
 
 export const icon = styled.img`
     margin-right: 0.8vw;
     cursor: pointer;
+    @media (max-width: 425px) {
+        margin-left: 5vw;
+    }
 `
 
 export const input = styled.input`
@@ -187,11 +207,16 @@ export const Button = styled.div`
     background-color: #FECF3D;
     text-align: center;
     padding: 2.2vh 1.2vw;
-    font-size: 1.1em;
+    font-size: 1.3vw;
     font-weight: 600;
     margin-top: 6vh;
     border-radius: 5px;
     cursor: pointer;
+    &:hover{
+        background-color: #f8ca11;
+        transition: all 0.3s ease 0s;
+        animation: 5s ease 0s 1 normal none running fdBcwW;
+    }
 `
 export const CopyrightBox = styled.div`
     display: flex;
